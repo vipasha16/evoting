@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openCity('Login')">Login</button>
+    <button class="w3-bar-item w3-button" onclick="openCity('Register')">Register</button>
+</div>
+
+<form>
+    <input TYPE="button"VALUE="login"
+           onclick="window.location.href='login'">
+</form>
+<form>
+    <input TYPE="button"VALUE="register"
+           onclick="window.location.href='http://localhost:8000/EVM3_war_exploded/register.html'">
+</form>
+
+
+
+    <h1 style="background-color:DodgerBlue;">Welcome To Online Voting System </h1>
+
+    <img src="java/election.jpg" width="1500pixels" height="500pixels">
+
+
+    <div id="Login" class="w3-container city">
+        <h2>Login</h2>
+    </div>
+
+    <div id="Register" class="w3-container city" style="display:none">
+        <h2>Register</h2>
+    </div>
+
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
